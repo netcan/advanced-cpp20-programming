@@ -1,0 +1,18 @@
+/*************************************************************************
+    > File Name: square.mpp
+    > Author: Netcan
+    > Blog: https://netcan.github.io/
+    > Mail: 1469709759@qq.com
+    > Created Time: 2021-12-30 21:13
+************************************************************************/
+
+export module math; // 对外模块名
+import <concepts>;
+
+export template<std::integral T>
+T square(T x); // 仅提供声明
+
+module :private;
+
+template<std::integral T>
+T square(T x); { return x * x; }

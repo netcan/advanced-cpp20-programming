@@ -1,0 +1,16 @@
+/*************************************************************************
+    > File Name: rectangle.mpp
+    > Author: Netcan
+    > Blog: https://netcan.github.io/
+    > Mail: 1469709759@qq.com
+    > Created Time: 2021-12-29 22:09
+************************************************************************/
+export module shape:rectangle;
+import :point;
+
+export struct Rectangle {
+    Point topLeft, bottomRight;
+    int width();
+    int height();
+    int area();
+};

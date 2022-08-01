@@ -1,0 +1,10 @@
+: 1
+name: modules
+version: 0.1.0-a.0.z
+summary: modules C++ executable
+license: other: proprietary ; Not free/open source.
+description-file: README.md
+url: https://example.org/modules
+email: netcan1996@gmail.com
+depends: * build2 >= 0.14.0
+depends: * bpkg >= 0.14.0

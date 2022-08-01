@@ -1,0 +1,24 @@
+set term svg size 800,600
+set output "output.svg"
+set ylabel 'cpu time/s' offset 2.3
+set xlabel 'input length/$10\^6$' offset 0,0.8
+set linetype 1 dt 2
+factor=1e6
+ms2s=1000
+set multiplot layout 2,2 \
+        margins 0.1,0.98,0.1,0.98 \
+        spacing 0.06,0.10
+
+set title 'g++ -std=c++17 -O0' offset 0,-0.8
+plot 'PolymorphismBenmark_gcc_O0.csv' using ($1/factor):($2/ms2s) with linespoints title 'subtype', 'PolymorphismBenmark_gcc_O0.csv' using ($1/factor):($3/ms2s) with linespoints title 'adhoc'
+
+set title 'g++ -std=c++17 -O3'
+plot 'PolymorphismBenmark_gcc_O3.csv' using ($1/factor):($2/ms2s) with linespoints title 'subtype', 'PolymorphismBenmark_gcc_O3.csv' using ($1/factor):($3/ms2s) with linespoints title 'adhoc'
+
+set title 'clang++ -std=c++17 -O0'
+plot 'PolymorphismBenmark_clang_O0.csv' using ($1/factor):($2/ms2s) with linespoints title 'subtype', 'PolymorphismBenmark_clang_O0.csv' using ($1/factor):($3/ms2s) with linespoints title 'adhoc'
+
+set title 'clang++ -std=c++17 -O3'
+plot 'PolymorphismBenmark_clang_O3.csv' using ($1/factor):($2/ms2s) with linespoints title 'subtype', 'PolymorphismBenmark_clang_O3.csv' using ($1/factor):($3/ms2s) with linespoints title 'adhoc'
+
+unset multiplot

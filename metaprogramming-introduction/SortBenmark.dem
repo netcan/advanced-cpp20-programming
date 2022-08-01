@@ -1,0 +1,9 @@
+set term svg
+set output "output.svg"
+set ylabel 'cpu time/s' offset 2.3
+set xlabel 'input length/$10\^6$' offset 0,0.8
+set linetype 1 dt 2
+
+factor=1e6
+ms2s=1000
+plot 'SortBenmark.csv' using ($1/factor):($2/ms2s) with linespoints title 'qsort', 'SortBenmark.csv' using ($1/factor):($3/ms2s) with linespoints title 'std::sort'

@@ -1,0 +1,13 @@
+/*************************************************************************
+    > File Name: main.cpp
+    > Author: Netcan
+    > Blog: https://netcan.github.io/
+    > Mail: 1469709759@qq.com
+    > Created Time: 2021-12-29 22:06
+************************************************************************/
+
+export module math; // 对外模块名
+import <concepts>;
+
+export template<std::integral T> // 引用头文件中的符号
+T square(T x) { return x * x; }
