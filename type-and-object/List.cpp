@@ -2,7 +2,7 @@
     > File Name: List.cpp
     > Author: Netcan
     > Blog: https://netcan.github.io/
-    > Mail: 1469709759@qq.com
+    > Mail: netcan1996@gmail.com
     > Created Time: 2021-01-23 14:37
 ************************************************************************/
 #include <iostream>

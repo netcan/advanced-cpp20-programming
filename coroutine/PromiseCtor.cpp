@@ -2,7 +2,7 @@
     > File Name: PromiseCtor.cpp
     > Author: Netcan
     > Blog: https://netcan.github.io/
-    > Mail: 1469709759@qq.com
+    > Mail: netcan1996@gmail.com
     > Created Time: 2021-12-16 21:32
 ************************************************************************/
 #include <coroutine>

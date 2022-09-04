@@ -3,7 +3,7 @@
     > Author: Netcan
     > Descripton: constexpr Datatable
     > Blog: https://netcan.github.io/
-    > Mail: 1469709759@qq.com
+    > Mail: netcan1996@gmail.com
     > Created Time: 2020-07-14 21:16
 ************************************************************************/
 #pragma once

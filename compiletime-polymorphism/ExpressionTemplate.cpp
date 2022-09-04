@@ -2,7 +2,7 @@
     > File Name: expression-template.cpp
     > Author: Netcan
     > Blog: https://netcan.github.io/
-    > Mail: 1469709759@qq.com
+    > Mail: netcan1996@gmail.com
     > Created Time: 2021-05-30 16:01
 ************************************************************************/
 #include <iostream>
